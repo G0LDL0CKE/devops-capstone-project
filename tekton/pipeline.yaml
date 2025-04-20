@@ -16,8 +16,6 @@ spec:
     - name: branch
       default: main
     - name: build-image
-      type: string
-    - name: deploy
   tasks:
     - name: init
       workspaces:
@@ -65,7 +63,6 @@ spec:
       - name: IMAGE
         value: "$(params.build-image)"
       runAfter:
-        - tests
         - lint
 
     - name: deploy
