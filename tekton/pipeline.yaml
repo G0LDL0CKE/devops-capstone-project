@@ -16,6 +16,7 @@ spec:
     - name: branch
       default: main
     - name: build-image
+      type: string
   tasks:
     - name: init
       workspaces:
