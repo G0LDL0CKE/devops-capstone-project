@@ -17,6 +17,7 @@ spec:
       default: main
     - name: build-image
       type: string
+    - name: deploy
   tasks:
     - name: init
       workspaces:
